@@ -55,9 +55,11 @@ For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-20
 
 ### Analyze
 1. Descriptive analysis on ride_duration
+
 | Min | Q1  | Median | Mean | Q3  | Max     |
 | --- | --- | ------ | ---- | --- | ------- |
 | 1   | 325 | 572    | 1091 | 1015| 5909344 |
+
 2. Compare members and casual users
 3. See the average ride time by each day for members vs casual users
 4. Analyze ridership data by type and weekday
