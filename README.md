@@ -13,7 +13,7 @@ Understand how casual riders and annual members use Cyclistic bikes differently.
 ## Steps
 The steps of the data analysis process: **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, and **Act**.
 
-### Ask
+### <ins>Ask</ins>
 Three questions will guide the future marketing program:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
