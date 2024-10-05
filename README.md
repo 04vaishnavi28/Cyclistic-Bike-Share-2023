@@ -137,5 +137,4 @@ Now that you have finished creating your visualizations, act on your findings. P
 **Deliverable**
 * Your top three recommendations based on your analysis
 
-For presentation, check [PowerPoint](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-2023/blob/main/Cyclistic%20-%20Bike%20Share%202023.pptx)
-[Cyclistic - Bike Share 2023.pptx](https://github.com/user-attachments/files/17266699/Cyclistic.-.Bike.Share.2023.pptx)
+For presentation, check [Cyclistic - Bike Share 2023.pptx](https://github.com/user-attachments/files/17266699/Cyclistic.-.Bike.Share.2023.pptx)
