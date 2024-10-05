@@ -23,6 +23,9 @@ Three questions will guide the future marketing program:
 * Identify the business task
 * Consider key stakeholders
 
+**Deliverable**
+* A clear statement of the business task
+
 ### <ins>Prepare</ins>
 Use Cyclistic’s historical trip data to analyze and identify trends. [Download the previous 12 months of Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
@@ -33,6 +36,9 @@ Use Cyclistic’s historical trip data to analyze and identify trends. [Download
 * Identify how it’s organized.
 * Sort and filter the data.
 * Determine the credibility of the data.
+
+**Deliverable**
+* A description of all data sources used
 
 ### <ins>Process</ins>
 1. Collect data.
@@ -52,6 +58,9 @@ Use Cyclistic’s historical trip data to analyze and identify trends. [Download
 * Document the cleaning process.
 
 For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-2023/blob/main/R%20log.txt)
+
+**Deliverable**
+* Documentation of any cleaning or manipulation of data
 
 ### <ins>Analyze</ins>
 1. Descriptive analysis on ride_duration
@@ -88,11 +97,9 @@ For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-20
 
 ![no  of rides over weekdays](https://github.com/user-attachments/assets/3c322610-ccca-4452-ab0c-0c2d43157949)
 
-
 6. Create a visualization for average duration
 
 ![avg  duration over weekdays](https://github.com/user-attachments/assets/9745e15f-dd43-4ef5-82a5-ea0fec499b77)
-
 
 **Key tasks**
 * Aggregate your data so it’s useful and accessible.
@@ -101,3 +108,34 @@ For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-20
 * Identify trends and relationships.
 
 For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-2023/blob/main/R%20log.txt)
+
+**Deliverable**
+* A summary of your analysis
+
+### <ins>Share</ins>
+Create visualizations to share your findings.
+
+**Key tasks**
+* Determine the best way to share your findings.
+* Create effective data visualizations.
+* Present your findings.
+* Ensure your work is accessible.
+
+For visualization, check [Tableau](https://public.tableau.com/app/profile/vaishnavi.hemadri/viz/Cyclistic-BikeShare2023/Dashboard1)
+
+**Deliverable**
+* Supporting visualizations and key findings
+
+### <ins>Act</ins>
+Now that you have finished creating your visualizations, act on your findings. Prepare the deliverables you created, including the three top recommendations based on your analysis.
+
+**Key tasks**
+* Create your portfolio.
+* Add your case study.
+* Practice presenting your case study to a friend or family member.
+
+**Deliverable**
+* Your top three recommendations based on your analysis
+
+For presentation, check [PowerPoint](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-2023/blob/main/Cyclistic%20-%20Bike%20Share%202023.pptx)
+[Cyclistic - Bike Share 2023.pptx](https://github.com/user-attachments/files/17266699/Cyclistic.-.Bike.Share.2023.pptx)
