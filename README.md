@@ -20,8 +20,8 @@ Three questions will guide the future marketing program:
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
 **Key tasks**
-*Identify the business task
-*Consider key stakeholders
+* Identify the business task
+* Consider key stakeholders
 
 ### Prepare
 Use Cyclistic’s historical trip data to analyze and identify trends. [Download the previous 12 months of Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
