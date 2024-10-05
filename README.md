@@ -4,7 +4,7 @@ This project analyzes bike usage patterns to understand how casual riders and an
 ## About the company
 In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
-## Senario
+## Scenario
 The director of marketing at Cyclistic, a bike-share company in Chicago believes the company’s future success depends on maximizing the number of annual memberships.
 
 ## Analytical Goals
@@ -13,7 +13,7 @@ Understand how casual riders and annual members use Cyclistic bikes differently.
 ## Steps
 The steps of the data analysis process: **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, and **Act**.
 
-### ASK
+### Ask
 Three questions will guide the future marketing program:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
@@ -22,7 +22,7 @@ Three questions will guide the future marketing program:
 ● Identify the business task
 ● Consider key stakeholders
 
-### PREPARE
+### Prepare
 Use Cyclistic’s historical trip data to analyze and identify trends. [Download the previous 12 months of Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 *Jan 2023 to Dec 2023 data have been used in this analysis.*
 **Key tasks**
@@ -31,7 +31,7 @@ Use Cyclistic’s historical trip data to analyze and identify trends. [Download
 ● Sort and filter the data.
 ● Determine the credibility of the data.
 
-### PROCESS
+### Process
 1. Collect data.
 2. Wrangle data and combine into a single file.
 3. Clean up and add data to prepare for analysis.
@@ -49,7 +49,7 @@ Use Cyclistic’s historical trip data to analyze and identify trends. [Download
 
 For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-2023/blob/main/R%20log.txt)
 
-### ANALYZE
+### Analyze
 1. Descriptive analysis on ride_duration
 min	q1	median	mean	q3	max
 1	325	572	1091	1015	5909344
