@@ -25,7 +25,8 @@ Three questions will guide the future marketing program:
 
 ### Prepare
 Use Cyclistic’s historical trip data to analyze and identify trends. [Download the previous 12 months of Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
-* *Jan 2023 to Dec 2023 data have been used in this analysis.*
+
+*Jan 2023 to Dec 2023 data have been used in this analysis.*
 
 **Key tasks**
 * Download data and store it appropriately.
