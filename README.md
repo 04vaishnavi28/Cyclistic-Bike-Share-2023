@@ -55,9 +55,9 @@ For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-20
 
 ### Analyze
 1. Descriptive analysis on ride_duration
-min	q1	median	mean	q3	max
-1	325	572	1091	1015	5909344
-
+min |	q1	| median | mean | q3 | max
+--------------------------------------
+1 | 325 | 572 | 1091 | 1015 | 5909344
 
 2. Compare members and casual users
 3. See the average ride time by each day for members vs casual users
