@@ -23,7 +23,7 @@ Three questions will guide the future marketing program:
 * Identify the business task
 * Consider key stakeholders
 
-### Prepare
+### <ins>Prepare</ins>
 Use Cyclistic’s historical trip data to analyze and identify trends. [Download the previous 12 months of Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
 
 *Jan 2023 to Dec 2023 data have been used in this analysis.*
@@ -34,7 +34,7 @@ Use Cyclistic’s historical trip data to analyze and identify trends. [Download
 * Sort and filter the data.
 * Determine the credibility of the data.
 
-### Process
+### <ins>Process</ins>
 1. Collect data.
 2. Wrangle data and combine into a single file.
 3. Clean up and add data to prepare for analysis.
@@ -53,7 +53,7 @@ Use Cyclistic’s historical trip data to analyze and identify trends. [Download
 
 For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-2023/blob/main/R%20log.txt)
 
-### Analyze
+### <ins>Analyze</ins>
 1. Descriptive analysis on ride_duration
 
 | Min | Q1  | Median | Mean | Q3  | Max     |
@@ -69,22 +69,10 @@ For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-20
 
 3. See the average ride time by each day for members vs casual users
 
-| Member/Casual | Day of Week | Avg Ride Duration |
-| ------------- | ----------- | ----------------- |
-| Casual        | Sunday      | 1972.109324       |
-| Member        | Sunday      | 839.5533302       |
-| Casual        | Monday      | 1663.254479       |
-| Member        | Monday      | 714.254121        |
-| Casual        | Tuesday     | 1505.379112       |
-| Member        | Tuesday     | 720.9111925       |
-| Casual        | Wednesday   | 1458.621069       |
-| Member        | Wednesday   | 716.9467192       |
-| Casual        | Thursday    | 1483.894001       |
-| Member        | Thursday    | 721.2934913       |
-| Casual        | Friday      | 1636.14568        |
-| Member        | Friday      | 748.8346388       |
-| Casual        | Saturday    | 1928.708079       |
-| Member        | Saturday    | 836.4458497       |
+| Member/Casual | Sunday    | Monday    | Tuesday   | Wednesday | Thursday  | Friday    | Saturday  |
+| ------------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| Casual        | 1972.1093 | 1663.2545 | 1505.3791 | 1458.6211 | 1483.8940 | 1636.1457 | 1928.7081 |
+| Member        | 839.5533  | 714.2541  | 720.9112  | 716.9467  | 721.2935  | 748.8346  | 836.4458  |
 
 4. Analyze ridership data by type and weekday
 
