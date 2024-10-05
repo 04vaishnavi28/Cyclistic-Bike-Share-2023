@@ -61,10 +61,50 @@ For code, check [R log](https://github.com/04vaishnavi28/Cyclistic-Bike-Share-20
 | 1   | 325 | 572    | 1091 | 1015| 5909344 |
 
 2. Compare members and casual users
+
+| Member/Casual | Mean     | Median | Max      | Min |
+| ------------- | -------- | ------ | -------- | --- |
+| Casual        | 1695.2375| 711    | 5,909,344| 1   |
+| Member        | 751.6673 | 511    | 93,580   | 1   |
+
 3. See the average ride time by each day for members vs casual users
+
+| Member/Casual | Day of Week | Avg Ride Duration |
+| ------------- | ----------- | ----------------- |
+| Casual        | Sunday      | 1972.109324       |
+| Member        | Sunday      | 839.5533302       |
+| Casual        | Monday      | 1663.254479       |
+| Member        | Monday      | 714.254121        |
+| Casual        | Tuesday     | 1505.379112       |
+| Member        | Tuesday     | 720.9111925       |
+| Casual        | Wednesday   | 1458.621069       |
+| Member        | Wednesday   | 716.9467192       |
+| Casual        | Thursday    | 1483.894001       |
+| Member        | Thursday    | 721.2934913       |
+| Casual        | Friday      | 1636.14568        |
+| Member        | Friday      | 748.8346388       |
+| Casual        | Saturday    | 1928.708079       |
+| Member        | Saturday    | 836.4458497       |
+
 4. Analyze ridership data by type and weekday
+
+| Rideable Type | Member/Casual | Sunday  | Monday  | Tuesday  | Wednesday | Thursday | Friday  | Saturday |
+| ------------- | ------------- | ------- | ------- | -------- | --------- | -------- | ------- | -------- |
+| Classic Bike  | Casual        | 155,214 | 96,980  | 99,648   | 98,618    | 107,945  | 127,753 | 190,647  |
+| Classic Bike  | Member        | 207,596 | 250,854 | 290,229  | 289,138   | 288,459  | 256,942 | 235,808  |
+| Docked Bike   | Casual        | 14,933  | 9,140   | 8,695    | 7,870     | 8,913    | 11,450  | 17,286   |
+| Electric Bike | Casual        | 165,470 | 128,646 | 137,819  | 142,605   | 153,682  | 172,632 | 202,675  |
+| Electric Bike | Member        | 201,169 | 243,627 | 286,400  | 297,227   | 301,027  | 274,561 | 236,950  |
+
 5. Visualize the number of rides by rider type
+
+![no  of rides over weekdays](https://github.com/user-attachments/assets/3c322610-ccca-4452-ab0c-0c2d43157949)
+
+
 6. Create a visualization for average duration
+
+![avg  duration over weekdays](https://github.com/user-attachments/assets/9745e15f-dd43-4ef5-82a5-ea0fec499b77)
+
 
 **Key tasks**
 * Aggregate your data so it’s useful and accessible.
