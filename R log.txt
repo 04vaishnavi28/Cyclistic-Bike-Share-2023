@@ -1,0 +1,127 @@
+R SCRIPT:
+
+PROCESS:
+
+library(tidyverse)
+library(conflicted)
+
+conflict_prefer("filter", "dplyr")
+conflict_prefer("lag", "dplyr")
+
+a2023_01 <- read_csv("2023-01.csv")
+a2023_02 <- read_csv("2023-02.csv")
+a2023_03 <- read_csv("2023-03.csv")
+a2023_04 <- read_csv("2023-04.csv")
+a2023_05 <- read_csv("2023-05.csv")
+a2023_06 <- read_csv("2023-06.csv")
+a2023_07 <- read_csv("2023-07.csv")
+a2023_08 <- read_csv("2023-08.csv")
+a2023_09 <- read_csv("2023-09.csv")
+a2023_10 <- read_csv("2023-10.csv")
+a2023_11 <- read_csv("2023-11.csv")
+a2023_12 <- read_csv("2023-12.csv")
+
+
+colnames(a2023_01)
+colnames(a2023_02)
+colnames(a2023_03)
+colnames(a2023_04)
+colnames(a2023_05)
+colnames(a2023_06)
+colnames(a2023_07)
+colnames(a2023_08)
+colnames(a2023_09)
+colnames(a2023_10)
+colnames(a2023_11)
+colnames(a2023_12)
+
+all_trips_2023 <- bind_rows(a2023_01, a2023_02, a2023_03, a2023_04, a2023_05, a2023_06, a2023_07, a2023_08, a2023_09, a2023_10, a2023_11, a2023_12)
+
+rm(a2023_01, a2023_02, a2023_03, a2023_04, a2023_05, a2023_06, a2023_07, a2023_08, a2023_09, a2023_10, a2023_11, a2023_12)
+
+colnames(all_trips_2023)
+nrow(all_trips_2023)
+dim(all_trips_2023)
+head(all_trips_2023)
+str(all_trips_2023)
+summary(all_trips_2023)
+
+table(all_trips_2023$member_casual)
+table(all_trips_2023$rideable_type)
+
+all_trips_2023$date <- as.Date(all_trips_2023$started_at, "%m/%d/%Y")
+all_trips_2023$month <- format(as.Date(all_trips_2023$date), "%m")
+all_trips_2023$day <- format(as.Date(all_trips_2023$date), "%d")
+all_trips_2023$year <- format(as.Date(all_trips_2023$date), "%Y")
+all_trips_2023$day_of_week <- format(as.Date(all_trips_2023$date), "%A")
+
+all_trips_2023$ride_duration <- difftime(all_trips_2023$ended_at,all_trips_2023$started_at)
+all_trips_2023$ride_duration <- gsub("secs", "", all_trips_2023$ride_duration)
+
+str(all_trips_2023)
+all_trips_2023$ride_duration <- as.numeric(as.character(all_trips_2023$ride_duration))
+all_trips_2023$month <- as.numeric(as.character(all_trips_2023$month))
+all_trips_2023$day <- as.numeric(as.character(all_trips_2023$day))
+all_trips_2023$year <- as.numeric(as.character(all_trips_2023$year))
+str(all_trips_2023)
+
+all_trips_2023 <- all_trips_2023[all_trips_2023$ride_duration > 0, ]
+
+write.csv(all_trips_2023, file = 'all_trips_2023.csv')
+
+all_trips_2023_v2 <- all_trips_2023 %>%
+  select(-c(start_lat, start_lng, end_lat, end_lng, end_station_name, start_station_name))
+
+write.csv(all_trips_2023_v2, file = 'all_trips_2023_v2.csv')
+
+
+ANALYZE:
+
+mean(all_trips_2023_v2$ride_duration)
+median(all_trips_2023_v2$ride_duration)
+max(all_trips_2023_v2$ride_duration)
+min(all_trips_2023_v2$ride_duration)
+
+summary(all_trips_2023_v2$ride_duration)
+
+aggregate(all_trips_2023_v2$ride_duration ~ all_trips_2023_v2$member_casual, FUN = mean)
+aggregate(all_trips_2023_v2$ride_duration ~ all_trips_2023_v2$member_casual, FUN = median)
+aggregate(all_trips_2023_v2$ride_duration ~ all_trips_2023_v2$member_casual, FUN = max)
+aggregate(all_trips_2023_v2$ride_duration ~ all_trips_2023_v2$member_casual, FUN = min)
+
+
+aggregate(all_trips_2023_v2$ride_duration ~ all_trips_2023_v2$member_casual + all_trips_2023_v2$day_of_week, FUN = mean)
+all_trips_2023_v2$day_of_week <- ordered(all_trips_2023_v2$day_of_week, levels=c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+aggregate(all_trips_2023_v2$ride_duration ~ all_trips_2023_v2$member_casual + all_trips_2023_v2$day_of_week, FUN = mean)
+counts <- aggregate(all_trips_2023_v2$ride_duration ~ all_trips_2023_v2$member_casual + all_trips_2023_v2$day_of_week, FUN = mean)
+write.csv(counts, file = 'avg_ride_length.csv')
+
+
+all_trips_2023_v2 %>%
+  mutate(weekday = wday(started_at, label = TRUE)) %>%
+  group_by(member_casual, weekday) %>% 
+  summarise(number_of_rides = n() ,average_duration = mean(ride_duration)) %>% 
+  arrange(member_casual, weekday)
+
+avg_duration_no_of_rides <- all_trips_2023_v2 %>%
+  mutate(weekday = wday(started_at, label = TRUE)) %>%
+  group_by(member_casual, weekday) %>% 
+  summarise(number_of_rides = n() ,average_duration = mean(ride_duration)) %>% 
+  arrange(member_casual, weekday)
+write.csv(avg_duration_no_of_rides, file = 'avg_duration_no_of_rides.csv')
+
+
+all_trips_2023_v2 %>%
+  mutate(weekday = wday(started_at, label = TRUE)) %>%
+  group_by(member_casual, weekday) %>%
+  summarise(number_of_rides = n(),average_duration = mean(ride_duration)) %>%
+  arrange(member_casual, weekday) %>%
+  ggplot(aes(x = weekday, y = number_of_rides, fill = member_casual)) + geom_col(position = "dodge")
+
+
+all_trips_2023_v2 %>%
+  mutate(weekday = wday(started_at, label = TRUE)) %>%
+  group_by(member_casual, weekday) %>%
+  summarise(number_of_rides = n(),average_duration = mean(ride_duration)) %>%
+  arrange(member_casual, weekday) %>%
+  ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) + geom_col(position = "dodge")
