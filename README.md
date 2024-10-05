@@ -18,9 +18,9 @@ Three questions will guide the future marketing program:
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
-**Key tasks** 
-● Identify the business task
-● Consider key stakeholders
+**Key tasks**
+Identify the business task
+Consider key stakeholders
 
 ### Prepare
 Use Cyclistic’s historical trip data to analyze and identify trends. [Download the previous 12 months of Cyclistic trip data here](https://divvy-tripdata.s3.amazonaws.com/index.html).
