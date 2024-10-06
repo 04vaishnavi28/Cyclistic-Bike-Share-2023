@@ -1,11 +1,11 @@
-# Cyclistic-Bike-Share-2023
+# Case Study: Converting Casual Riders into Annual Members
 This project analyzes bike usage patterns to understand how casual riders and annual members of Cyclistic, a bike-share company in Chicago, use bikes differently. The goal is to provide data-driven insights to help convert casual riders into annual members.
 
 ## About the company
 In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
 ## Scenario
-The director of marketing at Cyclistic, a bike-share company in Chicago believes the company’s future success depends on maximizing the number of annual memberships.
+The director of marketing at Cyclistic, a bike-share company in Chicago believes that the company’s future success depends on maximizing the number of annual memberships.
 
 ## Analytical Goals
 Understand how casual riders and annual members use Cyclistic bikes differently. From these insights, design a new marketing strategy to convert casual riders into annual members.
