@@ -121,13 +121,13 @@ Create visualizations to share your findings.
 * Present your findings.
 * Ensure your work is accessible.
 
-(https://public.tableau.com/app/profile/vaishnavi.hemadri/viz/Cyclistic-BikeShare2023/Dashboard1)
+![Screenshot (228)](https://github.com/user-attachments/assets/fd665285-085b-4b13-9984-f0fe9309b60c)
 
 ![Screenshot (230)](https://github.com/user-attachments/assets/08cb63c2-28bb-4264-afcc-b950fd1b09af)
 
 ![Screenshot (232)](https://github.com/user-attachments/assets/1aa2bb81-b438-40dd-b552-344111c83987)
 
-For visualization, check [Tableau]
+For visualization, check [Tableau](https://public.tableau.com/app/profile/vaishnavi.hemadri/viz/Cyclistic-BikeShare2023/Dashboard1)
 
 **Deliverable**
 * Supporting visualizations and key findings
