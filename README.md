@@ -127,7 +127,7 @@ Create visualizations to share your findings.
 
 ![Screenshot (232)](https://github.com/user-attachments/assets/4cbbaf64-eac5-48c7-afb6-f344f3d39440)
 
-For visualization, check [Tableau](https://public.tableau.com/app/profile/vaishnavi.hemadri/viz/Cyclistic-BikeShare2023/Dashboard1)
+For visualization, check [Tableau](https://public.tableau.com/app/profile/vaishnavi.hemadri/viz/CyclisticBikeShare_17289916211870/TotalBikeHires)
 
 **Deliverable**
 * Supporting visualizations and key findings
@@ -144,5 +144,3 @@ Now that you have finished creating your visualizations, act on your findings. P
 * Your top three recommendations based on your analysis
 
 For presentation, check [Cyclistic - Bike Share 2023.pptx](https://github.com/user-attachments/files/17266699/Cyclistic.-.Bike.Share.2023.pptx)
-
-.
